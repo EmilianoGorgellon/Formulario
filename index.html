@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Intro component with sign up form</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <div class="contenedor">
+    <main class="main">
+      <h1 class="main--title">Learn to code by watching others</h1>
+      <p class="main--sub-title">See how experiencers developer solve problems in real-time wtching scrips tutorials is great, but understanding how developers think is invaluable</p>
+    </main>
+    <aside class="aside">
+      <button class="aside--button">Try it free 7 days then $20/mo. thereafter</button>
+      <form class="formulario" action="" method="" name="formulario" id="formulario">
+        <!-- Nombre -->
+        <div class="formulario--grupo" id="formulario--nombre">
+          <label class="formulario--label" for="nombre">Nombre</label>
+          <div class="formulario--grupo-input">
+            <input class="formulario--input" type="text" name="nombre" id="nombre" placeholder="Name">
+            <i class="fas"></i>
+          </div>
+          <p class="formulario--msj-error-inactivo">Error, se aceptan 4 a 16 caracteres y solo letras</p>
+        </div>
+        <!-- Usuario -->
+        <div class="formulario--grupo" id="formulario--usuario">
+          <label class="formulario--label" for="usuario">Usuario</label>
+          <div class="formulario--grupo-input">
+            <input class="formulario--input" type="text" name="usuario" id="usuario" placeholder="Usuario">
+            <i class="fas"></i>
+          </div>
+          <p class="formulario--msj-error-inactivo">Error, se aceptan 4 a 16 caracteres y solo letras</p>
+        </div>
+        <!-- Email -->
+        <div class="formulario--grupo" id="formulario--email">
+          <label class="formulario--label" for="email">Email</label>
+          <div class="formulario--grupo-input"> 
+            <input class="formulario--input" type="email" name="email" id="email" placeholder="correo@ejemplo.com">
+            <i class="fas"></i>
+          </div>
+          <p class="formulario--msj-error-inactivo">Error, es necesario un correo valido cmo en el ejemplo</p>
+        </div>
+        <!-- Password -->
+        <div class="formulario--grupo" id="formulario--password">
+          <label class="formulario--label" for="password">Password</label>
+          <div class="formulario--grupo-input">
+            <input class="formulario--input" type="password" name="password" id="password" placeholder="Password">
+            <i class="fas"></i>
+          </div>
+          <p class="formulario--msj-error-inactivo">Error, se aceptan 4 a 16 digitos</p>
+        </div>
+        <!-- Repetir password -->
+        <div class="formulario--grupo" id="formulario--password2">
+          <label class="formulario--label" for="password2">Repetir contraseña</label>
+          <div class="formulario--grupo-input">
+            <input class="formulario--input" type="password" name="password2" id="password2" placeholder="Password">
+            <i class="fas"></i>
+          </div>
+          <p class="formulario--msj-error-inactivo">Error, tiene que repetir la misma contraseña</p>
+        </div>
+        <p class="error-desactivado" id="error"><i class="icon-error fas fa-exclamation-triangle"></i> Error, tiene que llenar correctamente el formulario</p>
+        <input class="formulario-button" id="button" type="button" value="CLAIM YOUR FREE TRIAL">
+        <p class="formulario--text">By clicking the button, you are agreeing to our <a href="#">Terms and services</a></p>
+      </form>
+      
+    </aside>
+  </div>
+  <script src="js/codigo.js"></script>
+  <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+</body>
+</html>
